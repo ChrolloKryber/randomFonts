@@ -1,34 +1,54 @@
-@font-face {
+@import url(./fonts.css);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid div {
+    padding: 20px;
+    /* width: 50%; */
+}
+
+.canela {
     font-family: 'Canela Thin';
-    src: url("../dist/fonts/canela-thin.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
 }
 
-@font-face {
+.dinweb {
     font-family: 'DinWeb Bold';
-    src: url(../dist/fonts/DINWeb-Bold.woff2) format("woff2");
-    font-weight: 500;
-    font-style: normal;
 }
 
-@font-face {
+.euclid-medium {
     font-family: "Euclid Circular A Medium";
-    src: url(../dist/fonts/EuclidCircularA-Medium-WebXL.woff2) format("woff2");
-    font-weight: 500;
-    font-style: normal;
 }
 
-@font-face {
+.euclid-regular {
     font-family: "Euclid Circular A Regular";
-    src: url(../dist/fonts/EuclidCircularA-Regular-WebXL.woff2) format("woff2");
-    font-weight: 400;
-    font-style: normal;
 }
 
-@font-face {
+.mother-nature {
     font-family: "Mother Nature";
-    src: url(../dist/fonts/mother_nature-webfont.woff2) format("woff2");
-    font-weight: 400;
-    font-style: normal;
 }
